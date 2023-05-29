@@ -29,7 +29,7 @@ func main() {
 	}
 
 	for i := 0; ; i++ {
-		_, err := r.Read()
+		data, err := r.Read()
 		if err == io.EOF {
 			break
 		}
