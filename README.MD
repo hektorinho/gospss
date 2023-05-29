@@ -6,7 +6,12 @@ This package can read an IBM Statistics data file in to golang to handle it any 
 ```golang
 package main
 
-import "github.com/hektorinho/gospss"
+import (
+	"io"
+	"log"
+	"os"
+	"github.com/hektorinho/gospss"
+)
 
 const TEST_FILE = "data/data7.sav"
 
