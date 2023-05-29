@@ -7,6 +7,7 @@ This package can read an IBM Statistics data file in to golang to handle it any 
 package main
 
 import (
+	"fmt"
 	"io"
 	"log"
 	"os"
@@ -35,7 +36,9 @@ func main() {
 		if err != nil {
 			log.Panicf("err >>> %s\n", err)
 		}
-		// fmt.Println(i, data)
+		
+		// Handle your data ...
+		fmt.Println(i, data)
 	}
 }
  ```
