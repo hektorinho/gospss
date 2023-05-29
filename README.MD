@@ -11,7 +11,7 @@ import "github.com/hektorinho/gospss"
 const TEST_FILE = "data/data7.sav"
 
 func main() {
-  f, err := os.OpenFile(TEST_FILE, os.O_RDONLY, 0777)
+  	f, err := os.OpenFile(TEST_FILE, os.O_RDONLY, 0777)
 	if err != nil {
 		log.Panicf("failed to open %s ::: err >>> %s\n", TEST_FILE, err)
 	}
